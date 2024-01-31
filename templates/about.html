@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block title %}About{% endblock title%}
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static "images/banner/b1.jpg" %}" class="d-block w-100" alt="banner images">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/banner/b2.jpg" %}" class="d-block w-100" alt="banner images">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/banner/b3.jpg" %}" class="d-block w-100" alt="banner images">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/banner/b4.jpg" %}" class="d-block w-100" alt="banner images">
+      </div>
+    </div>
+  </div>
+
+{%endblock banner-slider %}
+
+{% block main-content %} 
+
+<div class="container mt-3">
+    <br>
+<h2  class=" text-center">About us</h2>
+<br>
+<div class=" row-container">
+    <p class="fs-4 text-center">Kerala Cooperative Milk Marketing Federation Ltd. (KCMMF), is the Apex body of the dairy Cooperatives of Kerala, popularly known as 'Milma', which aims to provide remunerative returns to the farmers and also serve the interest of consumers by providing quality products which are good value for money.</p>
+</div>
+
+<br><br>
+<h2  class=" text-center">Missons</h2>
+<br>
+<div class=" row-container">
+    <p class="fs-4 text-center">To become the leading organisation in the food and nutrition sector in the region, through the attainment of its marketing objectives and to become nucleus of an endeavour for an accelerated development of the rural economy of the region further it would aspire to function as professional, profitable and socially responsible organisation ensuring better returns to farmers,primary societies as well as its customers by providing good value for their money.</p>
+</div>
+</div>
+<br><br>
+{% endblock main-content%}
